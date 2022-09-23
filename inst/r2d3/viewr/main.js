@@ -156,7 +156,7 @@ attach_camera_stream();
 // ================================================================
 shutter.on('click', function(){
 
-var i = 1, NumeroDeCapturas = 10; //loop n times after click
+var i = 1, NumeroDeCapturas = 50; //loop n times after click
 
 function f() { //generic function call to start the loop
   console.log("Capture #"+i); //print number of capture each iteration
@@ -185,7 +185,7 @@ function f() { //generic function call to start the loop
 	
   i++; //iteration +1
   if (i <= NumeroDeCapturas) { //less or equal number of captures
-    setTimeout(f, 1000); //
+    setTimeout(f, 5000); //
   }
 }
 
