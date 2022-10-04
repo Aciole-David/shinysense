@@ -75,7 +75,7 @@ shinyviewr <- function(
 
   output$shinyviewr <- r2d3::renderD3({
     r2d3::r2d3(
-      system.file("r2d3/viewr/main.js", package = "shinysense"),
+      system.file("www/main.js"),
       data = NULL,
       container = 'div',
       dependencies = 'd3-jetpack',
